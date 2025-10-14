@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estandares WEB – Práctica | Unidad 1</title>
+  <link rel="stylesheet" href="Recursos/CSS/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Estandares WEB – Práctica</h1>
+    <h2>Unidad 1 — Elementos obligatorios y ejemplo</h2>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#tabla">Tabla (requisitos)</a></li>
+        <li><a href="#etiquetas">Etiquetas HTML5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección 1: tabla -->
+    <section id="tabla" aria-labelledby="titulo-tabla">
+      <h2 id="titulo-tabla">Tabla de elementos obligatorios</h2>
+
+      <p>La tabla debe tener al menos 3 filas: una cabecera y dos filas de datos.</p>
+
+      <table class="tabla-ejemplo" summary="Elemento y descripción de requisitos">
+        <caption>Elementos base requeridos</caption>
+        <thead>
+          <tr>
+            <th scope="col">Elemento</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Declaración del documento HTML5</td>
+          </tr>
+          <tr>
+            <td>&lt;html lang="es"&gt;</td>
+            <td>Idioma del documento: Español</td>
+          </tr>
+          <tr>
+            <td>&lt;head&gt; / &lt;body&gt;</td>
+            <td>Metadatos y contenido visible</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <button id="btn-toggle-table">Ocultar / Mostrar tabla</button>
+        <button id="btn-open-pdf">Abrir flowchart (PDF)</button>
+      </p>
+    </section>
+
+    <!-- Sección 2: etiquetas nuevas -->
+    <section id="etiquetas" aria-labelledby="titulo-etiquetas">
+      <h2 id="titulo-etiquetas">Etiquetas HTML5 (ejemplo)</h2>
+
+      <article>
+        <h3>Artículo de ejemplo</h3>
+        <p>Este &lt;article&gt; simula contenido independiente (noticia, blog, etc.).</p>
+      </article>
+
+      <aside>
+        <h3>Aside / barra lateral</h3>
+        <p>Contenido tangencial: enlaces, aclaraciones o publicidad.</p>
+      </aside>
+
+      <figure>
+        <img src="Recursos/Imagenes/Imagen.png" alt="Flowchart HTML5 (si lo subes al repo)" style="max-width:100%;">
+        <figcaption>Diagrama: HTML5 sectioning flowchart (imagen local opcional).</figcaption>
+      </figure>
+
+      <p>También puedes descargar el PDF original usando el botón anterior o el enlace abajo:</p>
+      <p><a href="https://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank" rel="noopener">Descargar flowchart (PDF) — html5doctor</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Alumno: <strong>Juan Diego Torres</strong> — Asignatura: <strong>Programación Web</strong></p>
+    <p>Repositorio: <a href="https://github.com/diegotorres006" target="_blank" rel="noopener">https://github.com/diegotorres006</a></p>
+  </footer>
+
+  <script src="Recursos/JS/javascript.js"></script>
+</body>
+</html>
