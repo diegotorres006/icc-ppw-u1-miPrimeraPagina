@@ -1,90 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Estandares WEB – Práctica | Unidad 1</title>
-  <link rel="stylesheet" href="Recursos/CSS/estilo.css">
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Mi primera página web - Práctica 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Estandares WEB – Práctica</h1>
-    <h2>Unidad 1 — Elementos obligatorios y ejemplo</h2>
+    <header>
+        <h1 id="titulo">Mi primera página con estándares web</h1>
+        <h2>Unidad 1.2 – Estándares Web</h2>
+    </header>
 
-    <nav aria-label="Navegación principal">
-      <ul>
-        <li><a href="#tabla">Tabla (requisitos)</a></li>
-        <li><a href="#etiquetas">Etiquetas HTML5</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <section>
+            <h2>Tabla de elementos HTML</h2>
+            <p>A continuación se muestra una tabla creada con etiquetas HTML5.</p>
 
-  <main>
-    <!-- Sección 1: tabla -->
-    <section id="tabla" aria-labelledby="titulo-tabla">
-      <h2 id="titulo-tabla">Tabla de elementos obligatorios</h2>
+            <table id="tablaElementos">
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Encabezado principal del documento</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Define una sección temática en la página</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Pie de página con información del autor</td>
+                </tr>
+            </table>
 
-      <p>La tabla debe tener al menos 3 filas: una cabecera y dos filas de datos.</p>
+            <button id="agregarFila">Agregar fila</button>
+        </section>
 
-      <table class="tabla-ejemplo" summary="Elemento y descripción de requisitos">
-        <caption>Elementos base requeridos</caption>
-        <thead>
-          <tr>
-            <th scope="col">Elemento</th>
-            <th scope="col">Descripción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>&lt;!DOCTYPE html&gt;</td>
-            <td>Declaración del documento HTML5</td>
-          </tr>
-          <tr>
-            <td>&lt;html lang="es"&gt;</td>
-            <td>Idioma del documento: Español</td>
-          </tr>
-          <tr>
-            <td>&lt;head&gt; / &lt;body&gt;</td>
-            <td>Metadatos y contenido visible</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>
-        <button id="btn-toggle-table">Ocultar / Mostrar tabla</button>
-        <button id="btn-open-pdf">Abrir flowchart (PDF)</button>
-      </p>
-    </section>
-
-    <!-- Sección 2: etiquetas nuevas -->
-    <section id="etiquetas" aria-labelledby="titulo-etiquetas">
-      <h2 id="titulo-etiquetas">Etiquetas HTML5 (ejemplo)</h2>
-
-      <article>
-        <h3>Artículo de ejemplo</h3>
-        <p>Este &lt;article&gt; simula contenido independiente (noticia, blog, etc.).</p>
-      </article>
-
-      <aside>
-        <h3>Aside / barra lateral</h3>
-        <p>Contenido tangencial: enlaces, aclaraciones o publicidad.</p>
-      </aside>
+            <section>
+      <h2>Etiquetas nuevas exploradas</h2>
+      <p>Estas son dos etiquetas que aprendí de la tabla periódica HTML5.</p>
 
       <figure>
-        <img src="Recursos/Imagenes/Imagen.png" alt="Flowchart HTML5 (si lo subes al repo)" style="max-width:100%;">
-        <figcaption>Diagrama: HTML5 sectioning flowchart (imagen local opcional).</figcaption>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+             alt="Logo HTML5" width="100" />
+        <figcaption>Logo representativo del lenguaje HTML5</figcaption>
       </figure>
 
-      <p>También puedes descargar el PDF original usando el botón anterior o el enlace abajo:</p>
-      <p><a href="https://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank" rel="noopener">Descargar flowchart (PDF) — html5doctor</a></p>
+      <!-- DIV simple en lugar de nav/progress -->
+      <div id="progresoDiv" style="height:18px;"></div>
+
+      <!-- Texto pequeño después de la división -->
+      <p><small>Pequeño texto después del div</small></p>
     </section>
-  </main>
 
-  <footer>
-    <p>Alumno: <strong>Juan Diego Torres</strong> — Asignatura: <strong>Programación Web</strong></p>
-    <p>Repositorio: <a href="https://github.com/diegotorres006" target="_blank" rel="noopener">https://github.com/diegotorres006</a></p>
-  </footer>
+    </main>
 
-  <script src="Recursos/JS/javascript.js"></script>
+    <footer>
+        <p>Desarrollado por Juan Diego Torres - Programación Web</p>
+    </footer>
 </body>
+
 </html>

@@ -1,26 +1,46 @@
+# Programación y Plataformas Web (PPW)  
+## Práctica 1 y 2 – Estándares Web con HTML, CSS y JavaScript
 
-**Alumno:** Tu Nombre  
-**Asignatura:** Programación y Plataformas Web
-
-## Enlace a la página desplegada (GitHub Pages)
-https://TU_USUARIO.github.io/NOMBRE_REPO/
-
-> Sustituye `TU_USUARIO` y `NOMBRE_REPO` por los reales.
+**Asignatura:** Programación y Plataformas Web  
+**Unidad:** 1.2 – Estándares Web  
+**Estudiante:** [Juan Diego Torres]  
+**Repositorio:** [https://github.com/TU_USUARIO/TU_REPO](https://github.com/TU_USUARIO/TU_REPO)  
+**Página desplegada (GitHub Pages):** [https://TU_USUARIO.github.io/TU_REPO/](https://TU_USUARIO.github.io/TU_REPO/)
 
 ---
 
-## Requisitos obligatorios incluidos en este proyecto
-Cada uno debe incluir obligatoriamente los siguientes elementos base:
+## Resumen rápido
+- **Práctica 1:** creación del archivo `index.html` (estructura y HTML semántico).  
+- **Práctica 2:** adición de `style.css` y `script.js` (estilos y comportamiento).
 
-- `<!DOCTYPE html>` — Declaración HTML5 incluida.
-- `<html lang="es">` — Idioma del documento: Español.
-- `<head>` — Metadatos, título y enlace al CSS.
-- `<body>` — Contenido visible.
-- `<header>` — Encabezado principal que incluye un `<h1>` y un `<h2>`, y navegación.
-- `<section>` — Dos secciones:  
-  - Sección 1: contiene una **tabla** con al menos 3 filas (una cabecera y dos datos).  
-  - Sección 2: contiene **etiquetas HTML5** nuevas como `<article>`, `<aside>`, `<figure>`.  
-  Cada sección tiene su título en `<h2>`.
-- `<footer>` — Pie de página con nombre y asignatura.
-- `<table>` — Tabla con al menos 3 filas (ver `index.html`).
+---
 
+## 🧱 Estructura HTML utilizada (Práctica 1)
+
+| Componente | Descripción | Implementación |
+|------------|-------------|----------------|
+| `<!DOCTYPE html>` | Declaración HTML5 | Línea 1 |
+| `<html lang="es">` | Idioma del documento | Español |
+| `<header>` | Encabezado principal | Contiene `<h1 id="titulo">` y `<h2>` |
+| `<section>` | Agrupa contenido | Dos secciones con `<h2>` |
+| `<table id="tablaElementos">` | Tabla de elementos estudiados | Filas con `<th>` y `<td>` |
+| `<footer>` | Pie de página | Nombre del estudiante y asignatura |
+
+### Etiquetas nuevas exploradas
+| Etiqueta | Descripción | Uso en el proyecto |
+|----------|-------------|--------------------|
+| `<figure>` | Contenedor para imagen y pie | Logo HTML5 + `<figcaption>` |
+| `<nav>` | Zona de navegación / progreso | Navegacion |
+
+**Fragmentos importantes (HTML):**
+
+```html
+<!-- Figura con logo -->
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+       alt="Logo HTML5" width="100">
+  <figcaption>Logo representativo del lenguaje HTML5</figcaption>
+</figure>
+
+<!-- Barra de progreso representada -->
+<nav id="progreso">70% completado</nav>
