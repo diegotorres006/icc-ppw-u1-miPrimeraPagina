@@ -1,0 +1,26 @@
+
+**Alumno:** Tu Nombre  
+**Asignatura:** Programación y Plataformas Web
+
+## Enlace a la página desplegada (GitHub Pages)
+https://TU_USUARIO.github.io/NOMBRE_REPO/
+
+> Sustituye `TU_USUARIO` y `NOMBRE_REPO` por los reales.
+
+---
+
+## Requisitos obligatorios incluidos en este proyecto
+Cada uno debe incluir obligatoriamente los siguientes elementos base:
+
+- `<!DOCTYPE html>` — Declaración HTML5 incluida.
+- `<html lang="es">` — Idioma del documento: Español.
+- `<head>` — Metadatos, título y enlace al CSS.
+- `<body>` — Contenido visible.
+- `<header>` — Encabezado principal que incluye un `<h1>` y un `<h2>`, y navegación.
+- `<section>` — Dos secciones:  
+  - Sección 1: contiene una **tabla** con al menos 3 filas (una cabecera y dos datos).  
+  - Sección 2: contiene **etiquetas HTML5** nuevas como `<article>`, `<aside>`, `<figure>`.  
+  Cada sección tiene su título en `<h2>`.
+- `<footer>` — Pie de página con nombre y asignatura.
+- `<table>` — Tabla con al menos 3 filas (ver `index.html`).
+
